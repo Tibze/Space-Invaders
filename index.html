@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>.:: INVADERS webGL ::.</title>
+
+  <!-- META FACEBOOK -->
+  <meta property="og:title" content="Space Invaders" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://dev.tibz.net/space-invaders-pixi" />
+  <meta property="og:image" content="http://dev.tibz.net/space-invaders-pixi/assets/share.jpg" />
+  <meta property="og:site_name" content="Space Invaders" />
+
+  <meta name="description" content="Projet R&D / Space Invaders with Pixi.js : 2D webGL rendering framework with Canvas fallback" />
+  <meta name="keywords" content="" />
+  <!-- FIN META FACEBOOK -->
+
+	<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+<div id="container">
+  <div id="info">
+    <div id="titleScore">SCORE < 1 ></div>
+    <div id="score">000000</div>
+    <div id="titleHighScore"></div>
+    <div id="highScore"></div>
+    <div id="greenLine"></div>
+    <div id="life">1</div>
+    <div id="credit">CREDIT</div>
+    <div id="nbCredit">01</div>
+    <div id="startGame">NEW GAME ? &rsaquo;PRESS ENTER&lsaquo;</div>
+    <div id="saveGame">SAVE SCORE ? &rsaquo;PRESS ENTER&lsaquo;</div>
+    <div id="gameOver">GAME OVER</div>
+    <div id="loading">LOADING...</div>
+    <div id="level">LEVEL 1</div>
+    <div id="saveScore">
+
+    </div>
+  </div>
+
+  <div id="highscores">
+    <div id="list"></div>
+    <div id="startGame2">RESTART GAME ? &rsaquo;PRESS ENTER&lsaquo;</div>
+    <div id="titleHighScores">HI SCORES&rsaquo;TOP10&lsaquo;</div>
+    <div id="greenLine2"></div>
+    <div id="greenLine3"></div>
+  </div>
+
+</div>
+<div id="pixi">
+  <div id="txt">Create with :</div>
+  <div id="logo"><a href="http://www.pixijs.com/" target="blank"></a></div>
+</div>
+
+  <script type="text/template" id="inputTemplate">
+    <input type="text" value="<%=letter%>" maxlength="1" readonly="readonly">
+  </script>
+
+  <script type="text/template" id="scoreTemplate">
+    <div class="positionT"><%=id%></div>
+    <div class="scoreT"><%=score%></div>
+    <div class="pseudoT"><%=pseudo%></div>
+  </script>
+
+<script src="js/lib/jquery-1.10.2.min.js"></script>
+<script src="js/lib/underscore-min.js"></script>
+<script src="js/lib/pixi.min.js"></script>
+<script src="js/lib/TweenLite.min.js"></script>
+<script src="js/lib/backbone-min.js"></script>
+<script src="js/lib/quadTree.min.js"></script>
+<script src="js/classes.js"></script>
+<script src="js/customName.js"></script>
+<script src="js/highScores.js"></script>
+<script src="js/controller.js"></script>
+</body>
+</html>

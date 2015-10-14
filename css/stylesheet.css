@@ -1,0 +1,50 @@
+﻿/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ @font-face {font-family:"space invaders Regular";src:url("space_invaders.eot?") format("eot"),url("space_invaders.woff") format("woff"),url("space_invaders.ttf") format("truetype"),url("space_invaders.svg#Space-Invaders") format("svg");font-weight:normal;font-style:normal;}
+
+* {margin:0;padding:0;font-family:"space invaders Regular";}
+
+body {background-color: #000000;}
+#container {width:500px;height:600px;margin:0 auto;margin-top:30px;position:relative;border:1px solid #EEE;}
+#info {width:500px;height:600px;position:absolute;color:#FFF;font-size:16px;z-index: 10;}
+
+#titleScore {position:absolute;left:45px;top:60px;}
+#titleHighScore {position:absolute;right:45px;top:60px;}
+#score {position:absolute;left:57px;top:85px;}
+#highScore {position:absolute;right:90px;top:85px;}
+
+#pixi {/*position:absolute;bottom:30px;right:30px;*/width:100px;margin:0 auto;margin-top:30px;}
+#pixi #txt {font-family:"Arial";color:#FFF;font-size:10px;text-align: center;width:100px;}
+#logo a {display:block;background-image: url("../assets/logo_pixi.png");width:100px;height:48px;}
+
+#greenLine {position:absolute;width:450px;height:2px;background-color:#04dd08;top:520px;left:25px;}
+#greenLine2 {position:absolute;width:450px;height:2px;background-color:#04dd08;top:130px;left:25px;}
+#greenLine3 {position:absolute;width:450px;height:2px;background-color:#04dd08;top:390px;left:25px;}
+
+#life {position:absolute;bottom:50px;left:45px;}
+
+#credit {position:absolute;bottom:50px;right:75px;}
+#nbCredit {position:absolute;bottom:50px;right:45px;}
+
+#startGame {position:absolute;width:100%;text-align:center;top:290px;display:none;}
+#saveGame {position:absolute;width:100%;text-align:center;top:260px;display:none;}
+#loading {position:absolute;width:100%;text-align:center;top:290px;}
+#gameOver {position:absolute;width:100%;text-align:center;top:290px;display:none;}
+
+#level {position:absolute;width:100%;text-align:center;top:290px;display:none;}
+
+#saveScore {position:absolute;top:300px;left:195px;display:none;}
+#saveScore .letterItem {display:inline-block;}
+#saveScore input {width:15px;background-color:#000;color:#FFF;border:none;/*border-bottom:1px solid #04dd08;*/padding:5px;padding-left:10px;font-size: 20px;margin-right:5px;}
+
+#highscores {width:500px;height:600px;position:absolute;color:#FFF;font-size:16px;z-index: 11;background-color:#000;display:none;}
+
+#titleHighScores {position:absolute;left:45px;top:60px;}
+
+#startGame2 {position:absolute;width:100%;text-align:center;top:450px;}
+
+.positionT, .scoreT, .pseudoT {float:left;}
+.positionT {width:170px;}
+.scoreT {width:100px;}
+.pseudoT {width:80px;float:right;}
+.scoreItem {margin-left:45px;clear:both;}
+
+.highScoreContainer {margin-top:150px;}
